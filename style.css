@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: white;
+}
+
+/* Layout */
+.dashboard {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #111;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #ffd700;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin: 10px 0;
+    background: #222;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #ffd700;
+    color: black;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Form */
+.form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background: #ffd700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Table */
+.table {
+    margin-top: 20px;
+}
+
+#output div {
+    background: #111;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+}

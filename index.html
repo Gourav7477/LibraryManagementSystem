@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>📚 Library</h2>
+        <ul>
+            <li onclick="viewBooks()">Dashboard</li>
+            <li onclick="viewBooks()">Books</li>
+            <li onclick="borrowBook()">Borrow</li>
+            <li onclick="returnBook()">Return</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <h1>Library Dashboard</h1>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">Total Books: <span id="totalBooks">0</span></div>
+            <div class="card">Issued: <span id="issuedBooks">0</span></div>
+            <div class="card">Available: <span id="availableBooks">0</span></div>
+        </div>
+
+        <!-- Add Book -->
+        <div class="form">
+            <input id="bookId" placeholder="Book ID">
+            <input id="title" placeholder="Title">
+            <input id="author" placeholder="Author">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table">
+            <h2>Book List</h2>
+            <div id="output"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
